@@ -9,6 +9,11 @@ def spatial_softmax(img):
 
 
 def soft_argmax(array):
+    print(np.sum(array))
+    a = np.random.randn(5, 5)
+    a = a + -np.min(a)
+    print(np.unravel_index(np.argmax(a), a.shape))
+    array = np.exp(a) / np.sum(np.exp(a))
     max_position = np.zeros([2])
     r, c = np.shape(array)
     for i in range(r):
