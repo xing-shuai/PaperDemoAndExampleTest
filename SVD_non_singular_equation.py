@@ -7,7 +7,7 @@ b = np.array([[86.6], [103.4]])
 
 u, d, v = np.linalg.svd(a)
 
-print(u, d, v)
+# print(u, d, v)
 
 b_ = u.T @ b
 
