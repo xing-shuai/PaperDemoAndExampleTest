@@ -176,7 +176,7 @@ grid_vertices = grid_vertices.reshape(-1, 3)
 
 rorate_x_90 = transformations.rotation_matrix(np.radians(-90), (1, 0, 0))
 
-frame_size = 800
+frame_size = 900
 original_video_frame_size = 1000
 frame = np.zeros([frame_size, frame_size])
 
